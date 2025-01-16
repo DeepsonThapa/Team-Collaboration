@@ -1,0 +1,514 @@
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family:sans-serif;
+  }
+  
+  /* Navbar-Styles */
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+    
+  }
+  
+  /* Logo*/
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  /*Links */
+  .navlinks {
+    padding: 10px 40px 10px 300px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .navlinks li {
+    display: inline;
+  }
+  
+  .navlinks a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    transition: color 0.3s ease;
+  }
+  
+  .navlinks a:hover{
+      
+      background-color: #FC8A06;
+      color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  
+  
+  
+  /* Login-Signup Button */
+  .login-signup .btn {
+      margin-right:20px;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .login-signup .btn:hover {
+      background-color: #FC8A06;
+      color: white;
+    }
+  
+  
+    /*section 1*/
+    .section1 {
+      
+      margin-left:50px;
+      margin-right:50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 30px;
+      background-color: white;
+      border: 1px solid #e3e2e2;
+      border-radius: 20px;
+      background-color: #f9f8f8;
+    }
+    .content {
+      max-width: 50%;
+    }
+    .content h1 {
+      font-size: 48px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .search-bar {
+      display: flex;
+      gap: 10px;
+    }
+    .search-bar input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+    }
+    .search-bar button {
+      background-color: #FC8A06;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: #FC8A06;
+      border:1px solid #a19f9f;
+      
+    }
+    
+    /*Image */
+    .image img {
+      width: 200px;
+      border-radius: 10px;
+      display:flex;
+    }
+    .image img:hover{
+      border: 1px solid #FC8A06;
+      border-radius: 10px;
+    }
+  
+    /*section2*/
+  
+    .section2 {
+      margin-left:50px;
+      margin-right:50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+  /*courses*/
+  
+  .courses-list {
+    padding: 10px 40px 10px 300px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  .courses-list li {
+    display: inline;
+  }
+  .courses-list span:hover{
+   color:#FC8A06;
+  }
+  .courses-list a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+    
+  }
+  .courses-list a:hover{
+      color: #FC8A06;
+  }
+ .section3{
+  margin-left:50px;
+  margin-right:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+ }
+  .coursesimg1{/*Breakfast ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+    height: 250px;
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .coursesimg2{/*Lunch ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+    height: 250px;
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .coursesimg3{/*Dinner ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+    height: 250px;
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .section4 {
+    margin-left:50px;
+    margin-right:50px;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.all{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  margin-bottom: 40px;
+ }
+.foodimg1{/*Mo:Mo ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+  height: 150px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px;
+}.foodimg2{/*Salads ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+  height: 150px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px;
+}.foodimg3{/*Keema Noodels ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+  height: 150px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px;
+}.foodimg4{/*Pizza ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+  height: 150px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px;
+}.foodimg5{/*Chowmein ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+  height: 150px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px;
+}.foodimg6{/*Soups ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+  height: 150px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px;
+}
+.all p{
+  color: white;
+  padding: 100px 0px 0px 10px;
+
+}
+.section5{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 70px;
+}
+.section5-1{
+  margin-left:50px;
+  margin-right:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.section5-1-1{
+  margin-left:50px;
+  margin-right:50px;
+  display: flex;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.p1{
+  padding: 10px 20px 10px 150px;
+}
+.p2{
+  padding: 10px 20px 10px 270px;
+}
+.p3{
+  padding: 10px 20px 10px 270px;
+}
+.section5-2{
+  margin-left:50px;
+  margin-right:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.section5-2-1{
+  margin-left:0px;
+  margin-right:50px;
+  display: flex;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.p1-1{
+  padding: 10px 20px 10px 150px;
+  width: 400px;
+}
+.p2-2{
+  padding: 10px 20px 10px 3px;
+  width: 500px;
+}
+.p3-3{
+  padding: 10px 0px 10px 0px;
+  width: 300px;
+}
+.listimg1{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+width: 400px;
+height: 250px;
+background-color: black;
+border-radius: 10px;
+}
+.listimg2{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+  width: 400px;
+  height: 250px;
+  background-color: black;
+  border-radius: 10px;
+  }
+  .listimg3{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+    }
+    .listimg4{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+      width: 400px;
+      height: 250px;
+      background-color: black;
+      border-radius: 10px;
+      }
+      .listimg5{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+        width: 400px;
+        height: 250px;
+        background-color: black;
+        border-radius: 10px;
+        }
+        .listimg6{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+          width: 400px;
+          height: 250px;
+          background-color: black;
+          border-radius: 10px;
+          }
+.section6{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+.section7{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 60px;
+}
+.section8{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 20px;
+  display: flex;
+  background-color: #FC8A06;
+  border-radius: 10px;
+  color: white;
+  height: 200px;
+}
+.first11{
+padding: 50px 0px 0px 100px;
+}
+.second22{
+padding: 50px 0px 0px 200px;
+}
+.third3{
+padding: 50px 0px 0px 250px;
+}
+.fourth4{
+padding: 50px 0px 0px 250px;
+}
+.section9{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  height: 350px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.para{
+  padding-top: 160px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+.para p{
+  color: orange;
+}
+.para h1{
+  color: white;
+}
+.para button{
+  border-radius: 40px;
+  background-color: #FC8A06;
+  border-color: #FC8A06;
+  width: 250px;
+  height: 40px;
+  font-weight: bolder;
+}
+.section10{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  height: 150px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.section10 div{
+background-color: white;
+width: 1000px;
+height: 50px;
+padding: 0px 3px 30px 5px;
+border-radius: 10px;
+}
+.lower{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  padding: 0;
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0px;
+  height: 300px;
+  width: 100%;
+  background-color: #d9d9d9;
+  display: flex;
+}
+.logo9{
+  height: 270px;
+  width: 400px;
+  padding: 20px 5px 5px 80px;
+}
+.logo9 p{
+  padding-top: 200px;
+}
+.social{
+  height: 50px;
+  width: 250px;
+  padding: 50px 100px 200px 50px;
+
+}
+
+.log{
+  height: 40px;
+  width: 300px;
+  font-weight: 30px;
+  display: flex;
+  gap: 5px;
+}
+.first1{
+  padding: 0px 0px 0px 100px;
+}
+.info{
+  display: flex;
+  padding-top: 40px;
+}
+.info-1{
+  list-style-type: none;
+  padding-left: 15px;
+}
+.info1last{
+  padding-top: 0px;
+}
+.info1last a{
+  text-decoration: none;
+  color: black;
+}
+.second2{
+  padding: 0px 0px 0px 20px;
+}
+.titlelast{
+  display: flex;
+  align-items: center;
+}
+.navbarlast {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  background-color: #03081f;
+  color: white;
+  height: 30px;
+  
+}
+.navlinkslast {
+  padding: 10px 40px 10px 300px;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.navlinkslast li {
+  display: inline;
+}
+
+.navlinkslast a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
