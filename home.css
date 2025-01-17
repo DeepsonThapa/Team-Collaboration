@@ -1,8 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    margin: 0px;
-    padding: 0;
-    font-family:sans-serif;
+   margin-left: 25px;
+   margin-right: 25px;
+   font-family:sans-serif;
   }
   
   /* Navbar-Styles */
@@ -52,9 +56,6 @@ body {
     border-radius: 20px;
     padding: 10px 20px;
   }
-  
-  
-  
   
   /* Login-Signup Button */
   .login-signup .btn {
@@ -171,6 +172,7 @@ body {
   .courses-list a:hover{
       color: #FC8A06;
   }
+
  .section3{
   margin-left:50px;
   margin-right:50px;
@@ -179,22 +181,27 @@ body {
   align-items: center;
   margin-top: 20px;
  }
-  .coursesimg1{/*Breakfast ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-    height: 250px;
-    width: 400px;
-    background-color: black;
+ .courses-img{
+  display:flex;
+  gap:50px;
+ }
+  .coursesimg1 img{
+    height: 220px;
+    flex:1;
+    width: 330px;
+    border-radius: 10px;
+    
+  }
+  .coursesimg2 img{
+    height: 220px;
+    flex:1;
+    width: 330px;
     border-radius: 10px;
   }
-  .coursesimg2{/*Lunch ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-    height: 250px;
-    width: 400px;
-    background-color: black;
-    border-radius: 10px;
-  }
-  .coursesimg3{/*Dinner ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-    height: 250px;
-    width: 400px;
-    background-color: black;
+  .coursesimg3 img{
+    height: 220px;
+    flex:1;
+    width: 330px;
     border-radius: 10px;
   }
   .section4 {
@@ -204,6 +211,7 @@ body {
     margin-top: 70px;
     margin-bottom: 40px;
 }
+
 .all{
   display: flex;
   justify-content: space-between;
@@ -212,134 +220,115 @@ body {
   gap: 10px;
   margin-bottom: 40px;
  }
-.foodimg1{/*Mo:Mo ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+
+.food-img1{
   height: 150px;
   width: 200px;
-  background-color: black;
+  background-image: url(momo.jpg);
   border-radius: 10px;
-}.foodimg2{/*Salads ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+
+
+}.food-img2{
   height: 150px;
   width: 200px;
-  background-color: black;
+  background-image: url(pexels-iina-luoto-460132-1211887.jpg);
   border-radius: 10px;
-}.foodimg3{/*Keema Noodels ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
+
+
+}.food-img3{
   height: 150px;
   width: 200px;
-  background-color: black;
-  border-radius: 10px;
-}.foodimg4{/*Pizza ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-  height: 150px;
-  width: 200px;
-  background-color: black;
-  border-radius: 10px;
-}.foodimg5{/*Chowmein ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-  height: 150px;
-  width: 200px;
-  background-color: black;
-  border-radius: 10px;
-}.foodimg6{/*Soups ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-  height: 150px;
-  width: 200px;
-  background-color: black;
+  background-image: url(Keema\ Noodles.jpeg);
+
   border-radius: 10px;
 }
+
+.food-img4{
+  height: 150px;
+  width: 200px;
+  background-image: url(pexels-renestrgar-13814644.jpg);
+
+  border-radius: 10px;
+}
+
+.food-img5{
+  height: 150px;
+  width: 200px;
+  background-image: url(Chowmein.jpg);
+
+  border-radius: 10px;
+}
+
+.food-img6{
+  height: 150px;
+  width: 200px;
+  background-image: url(pexels-rukiye-demir-169878558-27349437.jpg);
+  border-radius: 10px;
+}
+
 .all p{
   color: white;
   padding: 100px 0px 0px 10px;
 
 }
-.section5{
+
+/*Restaurants*/
+
+.section5 h3{
+  margin-bottom:10px;
   margin-left:50px;
   margin-right:50px;
-  margin-top: 70px;
+
 }
 .section5-1{
-  margin-left:50px;
-  margin-right:50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+ 
+    margin-left:50px;
+    margin-right:50px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display:flex;
+    gap:20px;
 }
-.section5-1-1{
-  margin-left:50px;
-  margin-right:50px;
-  display: flex;
-  margin-top: 20px;
-  font-weight: 600;
-}
-.p1{
-  padding: 10px 20px 10px 150px;
-}
-.p2{
-  padding: 10px 20px 10px 270px;
-}
-.p3{
-  padding: 10px 20px 10px 270px;
-}
-.section5-2{
-  margin-left:50px;
-  margin-right:50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-.section5-2-1{
-  margin-left:0px;
-  margin-right:50px;
-  display: flex;
-  margin-top: 20px;
-  font-weight: 600;
-}
-.p1-1{
-  padding: 10px 20px 10px 150px;
-  width: 400px;
-}
-.p2-2{
-  padding: 10px 20px 10px 3px;
-  width: 500px;
-}
-.p3-3{
-  padding: 10px 0px 10px 0px;
-  width: 300px;
-}
-.listimg1{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-width: 400px;
-height: 250px;
-background-color: black;
-border-radius: 10px;
-}
-.listimg2{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-  width: 400px;
-  height: 250px;
-  background-color: black;
+
+.Res-1 img{
+  flex:1;
   border-radius: 10px;
-  }
-  .listimg3{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-    width: 400px;
-    height: 250px;
-    background-color: black;
-    border-radius: 10px;
-    }
-    .listimg4{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-      width: 400px;
-      height: 250px;
-      background-color: black;
-      border-radius: 10px;
-      }
-      .listimg5{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-        width: 400px;
-        height: 250px;
-        background-color: black;
-        border-radius: 10px;
-        }
-        .listimg6{/*Restaurants ko image rakhnu backgroundcolor ko thau ma backgroung image rakhnu*/
-          width: 400px;
-          height: 250px;
-          background-color: black;
-          border-radius: 10px;
-          }
+  
+}
+
+.Res-2 img{
+  flex:1;
+  border-radius: 10px;
+}
+.Res-3 img{
+  flex:1;
+  border-radius: 10px;
+}
+
+.section5-2 {
+  margin-left:50px;
+  margin-right:50px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  display:flex;
+  gap:20px;
+}
+
+.Res-4 img{
+  flex:1;
+  border-radius: 10px;
+}
+.Res-5 img{
+  flex:1;
+  border-radius: 10px;
+}
+.Res-6 img{
+  flex:1;
+  border-radius: 10px;
+}
+
 .section6{
   margin-left:50px;
   margin-right:50px;
@@ -360,30 +349,35 @@ border-radius: 10px;
   background-color: #FC8A06;
   border-radius: 10px;
   color: white;
-  height: 200px;
+  height: 160px;
 }
 .first11{
-padding: 50px 0px 0px 100px;
+padding: 50px 50px 50px 50px;
 }
 .second22{
-padding: 50px 0px 0px 200px;
+padding: 50px 50px 50px 150px;
 }
 .third3{
-padding: 50px 0px 0px 250px;
+padding:  50px 50px 50px 180px;
 }
 .fourth4{
-padding: 50px 0px 0px 250px;
+padding:  50px 50px 50px 220px;
 }
+
+/*Partner with us*/
+
 .section9{
   margin-left:50px;
   margin-right:50px;
   margin-top: 80px;
-  margin-bottom: 20px;
+  
   height: 350px;
-  background-color: #000000;
-  border-radius: 10px;
+  border-radius: 20px;
 }
+
 .para{
+  background-image: url(Handshake.jpg);
+ background-size:cover;
   padding-top: 160px;
   padding-left: 100px;
   padding-bottom: 20px;
@@ -403,8 +397,11 @@ padding: 50px 0px 0px 250px;
   height: 40px;
   font-weight: bolder;
 }
+
+
+
 .section10{
-  margin-top: 20px;
+  
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
@@ -423,53 +420,48 @@ height: 50px;
 padding: 0px 3px 30px 5px;
 border-radius: 10px;
 }
+
 .lower{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 .footer{
-  padding: 0;
-  margin-top: 70px;
-  margin-left: 0;
-  margin-right: 0px;
-  height: 300px;
+  margin: 10px 0px 0px 0px;
+
+  height: 200px;
   width: 100%;
-  background-color: #d9d9d9;
+  background-color: #ededed;
   display: flex;
 }
+
 .logo9{
-  height: 270px;
-  width: 400px;
+  
   padding: 20px 5px 5px 80px;
 }
+
 .logo9 p{
-  padding-top: 200px;
+padding-top: 100px;
 }
 .social{
+  flex:1;
   height: 50px;
   width: 250px;
   padding: 50px 100px 200px 50px;
 
 }
 
-.log{
-  height: 40px;
-  width: 300px;
-  font-weight: 30px;
-  display: flex;
-  gap: 5px;
-}
-.first1{
-  padding: 0px 0px 0px 100px;
-}
 .info{
+  flex:1;
+  
   display: flex;
-  padding-top: 40px;
+  
 }
 .info-1{
   list-style-type: none;
-  padding-left: 15px;
+ 
 }
 .info1last{
   padding-top: 0px;
@@ -497,7 +489,7 @@ border-radius: 10px;
   
 }
 .navlinkslast {
-  padding: 10px 40px 10px 300px;
+  padding:10px ;
   list-style: none;
   display: flex;
   gap: 50px;
