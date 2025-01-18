@@ -4,11 +4,11 @@
 }
 
 body {
-   margin-left: 25px;
-   margin-right: 25px;
    font-family:sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
   }
-  
+ 
   /* Navbar-Styles */
   .navbar {
     display:flex;
@@ -32,6 +32,7 @@ body {
   
   /*Links */
   .navlinks {
+    
     padding: 10px 40px 10px 300px;
     list-style: none;
     display: flex;
@@ -44,7 +45,7 @@ body {
   
   .navlinks a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     color: #000000;
     transition: color 0.3s ease;
   }
@@ -65,7 +66,7 @@ body {
       color: white;
       padding: 10px 20px;
       border-radius: 20px;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
@@ -82,10 +83,10 @@ body {
       margin-left:50px;
       margin-right:50px;
       display: flex;
-      align-items: center;
+    
       justify-content: space-between;
-      padding: 50px 30px;
-      background-color: white;
+      padding: 40px 30px;
+      
       border: 1px solid #e3e2e2;
       border-radius: 20px;
       background-color: #f9f8f8;
@@ -94,12 +95,12 @@ body {
       max-width: 50%;
     }
     .content h1 {
-      font-size: 48px;
+      font-size: 45px;
       color: #333;
       margin-bottom: 20px;
     }
     .content p {
-      font-size: 15px;
+      font-size: 14px;
       color: #666;
       margin-bottom: 30px;
     }
@@ -110,39 +111,42 @@ body {
     .search-bar input {
       padding: 10px;
       width: 300px;
-      border: 1px solid #ddd;
+      border: 1px solid #FC8A06;
       border-radius: 20px;
     }
     .search-bar button {
+      margin-left:0px;
+
       background-color: #FC8A06;
       color: white;
       border: none;
       padding: 10px 20px;
       border-radius: 20px;
       cursor: pointer;
+     
+      margin-left:-95px;
     }
     .search-bar button:hover {
-      background-color: #FC8A06;
-      border:1px solid #a19f9f;
+      background-color: #cb6f05;
+      
       
     }
     
+  
     /*Image */
-    .image img {
-      width: 200px;
+    .image1 img {
+      height:350px;
+      width: 230px;
       border-radius: 10px;
       display:flex;
+      border: 5px solid #FC8A06;
+      box-shadow: 0px 0px 10px;
     }
-    .image img:hover{
-      border: 1px solid #FC8A06;
-      border-radius: 10px;
-    }
-  
     /*section2*/
   
     .section2 {
       margin-left:50px;
-      margin-right:50px;
+      margin-right:40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -269,7 +273,7 @@ body {
 .all p{
   color: white;
   padding: 100px 0px 0px 10px;
-
+font-size:14px;
 }
 
 /*Restaurants*/
@@ -292,6 +296,7 @@ body {
 }
 
 .Res-1 img{
+
   flex:1;
   border-radius: 10px;
   
@@ -328,7 +333,9 @@ body {
   flex:1;
   border-radius: 10px;
 }
-
+.section5 p{
+  font-size:14px;
+}
 .section6{
   margin-left:50px;
   margin-right:50px;
@@ -429,49 +436,46 @@ border-radius: 10px;
 
 
 .footer{
-  margin: 10px 0px 0px 0px;
-
+  margin: 10px 0 0 0;
   height: 200px;
   width: 100%;
   background-color: #ededed;
   display: flex;
 }
 
+
 .logo9{
-  
   padding: 20px 5px 5px 80px;
 }
 
 .logo9 p{
 padding-top: 100px;
 }
+
 .social{
   flex:1;
-  height: 50px;
-  width: 250px;
-  padding: 50px 100px 200px 50px;
+  padding:20px;
 
 }
 
 .info{
   flex:1;
-  
-  display: flex;
+  padding:20px;
   
 }
 .info-1{
   list-style-type: none;
  
 }
-.info1last{
-  padding-top: 0px;
-}
+
 .info1last a{
   text-decoration: none;
   color: black;
 }
-.second2{
-  padding: 0px 0px 0px 20px;
+
+.second{
+  padding:20px;
+
 }
 .titlelast{
   display: flex;
