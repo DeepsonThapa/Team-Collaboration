@@ -560,6 +560,7 @@ padding-top: 100px;
 .info{
   flex:1;
   padding:20px;
+  display:flex;
   
 }
 .info-1{
@@ -570,12 +571,7 @@ padding-top: 100px;
 .info1last a{
   text-decoration: none;
   color: black;
-}
-
-.second{
-  padding:20px;
-
-}
+}
 .titlelast{
   display: flex;
   align-items: center;
