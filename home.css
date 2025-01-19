@@ -79,11 +79,11 @@ body {
   
     /*section 1*/
     .section1 {
-      
+      margin-top:20px;
       margin-left:50px;
       margin-right:50px;
       display: flex;
-    
+      margin-bottom:40px;
       justify-content: space-between;
       padding: 40px 30px;
       
@@ -95,6 +95,7 @@ body {
       max-width: 50%;
     }
     .content h1 {
+      margin-top:40px;
       font-size: 45px;
       color: #333;
       margin-bottom: 20px;
@@ -185,29 +186,58 @@ body {
   align-items: center;
   margin-top: 20px;
  }
+
+ .section3 p{
+  font-size: 14px;
+  padding:180px 0px 10px 10px;
+  color:black;
+  font-weight: 700;
+
+ }
  .courses-img{
   display:flex;
   gap:50px;
  }
-  .coursesimg1 img{
+  .coursesimg1{
+    background-image: url(breakfast1.jpg);
+    background-size: cover;
     height: 220px;
     flex:1;
     width: 330px;
     border-radius: 10px;
     
   }
-  .coursesimg2 img{
+  .coursesimg2{
+    background-image: url(Lunch.jpeg);
+    background-size: cover;
     height: 220px;
     flex:1;
     width: 330px;
     border-radius: 10px;
   }
-  .coursesimg3 img{
+  .coursesimg2 p{
+    color:white;
+  }
+
+  .coursesimg3{
+    background-image: url(Dinner2.jpg);
+    background-size: cover;
     height: 220px;
     flex:1;
     width: 330px;
     border-radius: 10px;
   }
+  .coursesimg1:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+  }.coursesimg2:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+  }.coursesimg3:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
   .section4 {
     margin-left:50px;
     margin-right:50px;
@@ -221,59 +251,80 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  gap: 10px;
+  gap: 1px;
   margin-bottom: 40px;
  }
 
 .food-img1{
-  height: 150px;
-  width: 200px;
-  background-image: url(momo.jpg);
+ 
+  height: 145px;
+  width:170px;
+  background-image: url(Jess\ _\ Food\ Eater\ on\ Instagram_\ _jhol\ momo\ 🥟\ LOOK….jpeg);
+  background-size: cover;
   border-radius: 10px;
 
-
-}.food-img2{
-  height: 150px;
-  width: 200px;
+}
+.food-img1:hover{
+  transform: scale(1.1);
+}
+.food-img2{
+  height: 145px;
+  width:170px;
+  background-size: cover;
   background-image: url(pexels-iina-luoto-460132-1211887.jpg);
   border-radius: 10px;
 
 
-}.food-img3{
-  height: 150px;
-  width: 200px;
+}
+.food-img2:hover{
+  transform: scale(1.2);
+}
+.food-img3{
+  height: 145px;
+  width:170px;
+  background-size: cover;
   background-image: url(Keema\ Noodles.jpeg);
-
   border-radius: 10px;
 }
-
+.food-img3:hover{
+  transform: scale(1.2);
+}
 .food-img4{
-  height: 150px;
-  width: 200px;
+  height: 145px;
+  width:170px;
   background-image: url(pexels-renestrgar-13814644.jpg);
-
+  background-size: cover;
   border-radius: 10px;
 }
-
+.food-img4:hover{
+  transform: scale(1.2);
+}
 .food-img5{
-  height: 150px;
-  width: 200px;
-  background-image: url(Chowmein.jpg);
-
+  height: 145px;
+  width:170px;
+  background-image:url(Chowmein.jpg);
+  background-size: cover;
   border-radius: 10px;
 }
-
+.food-img5:hover{
+  transform: scale(1.2);
+}
 .food-img6{
-  height: 150px;
-  width: 200px;
+  height: 145px;
+  width:170px;
   background-image: url(pexels-rukiye-demir-169878558-27349437.jpg);
+  background-size: cover;
   border-radius: 10px;
 }
-
+.food-img6:hover{
+  transform: scale(1.2);
+}
 .all p{
   color: white;
-  padding: 100px 0px 0px 10px;
-font-size:14px;
+  font-weight:700;
+  padding-top:110px;
+  padding-left:15px;
+  font-size:14px;
 }
 
 /*Restaurants*/
@@ -292,23 +343,37 @@ font-size:14px;
     margin-top: 30px;
     margin-bottom: 40px;
     display:flex;
-    gap:20px;
+    gap:40px;
 }
 
 .Res-1 img{
-
+  height:200px;
+  width:340px;
   flex:1;
   border-radius: 10px;
   
 }
 
 .Res-2 img{
+  height:200px;
+  width:340px;
   flex:1;
   border-radius: 10px;
 }
 .Res-3 img{
+  height:200px;
+  width:340px;
   flex:1;
   border-radius: 10px;
+}
+.Res-1:hover{
+  transform: scale(1.01);
+}
+.Res-2:hover{
+  transform: scale(1.01);
+}
+.Res-3:hover{
+  transform: scale(1.01);
 }
 
 .section5-2 {
@@ -318,24 +383,56 @@ font-size:14px;
   margin-top: 50px;
   margin-bottom: 40px;
   display:flex;
-  gap:20px;
+  gap:40px;
 }
 
 .Res-4 img{
+  height:200px;
+  width:340px;
   flex:1;
   border-radius: 10px;
 }
 .Res-5 img{
+  height:200px;
+  width:340px;
   flex:1;
   border-radius: 10px;
 }
 .Res-6 img{
+  height:200px;
+  width:340px;
   flex:1;
   border-radius: 10px;
 }
-.section5 p{
-  font-size:14px;
+.Res-5:hover{
+  transform: scale(1.01);
 }
+.Res-6:hover{
+  transform: scale(1.01);
+}
+.Res-7:hover{
+  transform: scale(1.01);
+}
+
+.section5-1 a{
+ 
+  font-weight: 700;
+  color:rgb(89, 88, 88);
+  margin-left: 90px;
+}
+#res-3{
+  margin-left:110px;
+}
+
+.section5-2 a{
+  font-weight: 700;
+  color:rgb(89, 88, 88);
+  margin-left: 50px;
+}
+#res-6{
+  margin-left:100px;
+}
+
 .section6{
   margin-left:50px;
   margin-right:50px;
@@ -374,64 +471,66 @@ padding:  50px 50px 50px 220px;
 /*Partner with us*/
 
 .section9{
+  background-color: #666;
   margin-left:50px;
   margin-right:50px;
-  margin-top: 80px;
-  
+  margin-top: 50px;
   height: 350px;
   border-radius: 20px;
+  margin-bottom: 35px;
+  
 }
-
-.para{
-  background-image: url(Handshake.jpg);
- background-size:cover;
-  padding-top: 160px;
-  padding-left: 100px;
-  padding-bottom: 20px;
-  font-weight: bolder;
-}
-.para p{
+.section9 p{
+  padding-top:180px;
+  padding-left:65px;
+  padding-bottom: 0px;
+  font-size: 13px;
   color: orange;
+  
 }
-.para h1{
-  color: white;
+.section9 h1{
+ 
+  padding-left:65px;
+  margin-top: 0px;
+  font-size: 28px;
+  color: black;
 }
-.para button{
+.section9 button{
+  text-align: center;
+  
+  color:white;
   border-radius: 40px;
   background-color: #FC8A06;
-  border-color: #FC8A06;
+  border: none;
   width: 250px;
   height: 40px;
-  font-weight: bolder;
+
 }
-
-
 
 .section10{
   
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   height: 150px;
   background-color: #d9d9d9;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
 .section10 div{
+  text-align: center;
 background-color: white;
 width: 1000px;
 height: 50px;
 padding: 0px 3px 30px 5px;
 border-radius: 10px;
 }
-
-.lower{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section10 p{
+font-size: 14px;
+  padding:20px 50px 20px 20px;
 }
 
 
