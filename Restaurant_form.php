@@ -1,3 +1,46 @@
+<?php
+// MySQL server credentials
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "restaurant_database";
+
+// Create a connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Sanitize and validate user inputs
+    $owner_name = $_POST['owner_name'];
+    $restaurant_name = $_POST['restaurant_name'];
+    $email_address = $_POST['email_address'];
+    $address = $_POST['address'];
+    $contact_number = $_POST['contact_number'];
+    $restaurant_details = $_POST['restaurant_details'];
+
+    // Prepare the SQL statement
+    $sql = "INSERT INTO restaurant_table (owner_name, restaurant_name, email_address, Address, contact_number,restaurant_details) 
+    VALUES ('$owner_name', '$restaurant_name', '$email_address', '$address', '$contact_number', '$restaurant_details')";
+
+if ($conn->query($sql) === TRUE) {
+echo "<script>alert(' successful!');</script>";  // javascript alert for restaurant signup 
+echo "<script>window.location.href = 'Restaurant.html';</script>"; // javascript link
+} else {
+echo "Error: " . $conn->error ;
+
+   
+}
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
