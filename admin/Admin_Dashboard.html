@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="Admin_Dashboard.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style type="text/css">
+      * {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins';
+        }
+      .chart-container {
+          width: 100%;
+          height: 400px;
+          margin: 20px 0;
+      }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="Images/Logo.png" alt="Foodly Logo" />
+      </div>
+      <nav>
+        <p>MAIN</p>
+        <ul>
+          <a href="Admin_Dashboard.html"><li class="active">Dashboard</li></a>
+          <a href="admin_orders.html"><li>Orders</li></a>
+          <a href="admin_restaurants.html"><li>Restaurants</li></a>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <h1>Administration Panel</h1>
+        </div>
+      </header>
+
+      <p>Dashboard</p>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="stat-card">
+          <h2>Total Menus</h2>
+          <p>150</p>
+        </div>
+        <div class="stat-card">
+          <h2>Total Orders</h2>
+          <p>320</p>
+        </div>
+        <div class="stat-card">
+          <h2>Active Users</h2>
+          <p>50</p>
+        </div>
+        <div class="stat-card">
+          <h2>New Restaurants</h2>
+          <p>10</p>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+     <!-- Charts Section -->
+<section class="charts">
+  <div class="chart">
+   
+    <canvas id="lineChart"></canvas> <!-- Line chart canvas -->
+  </div>
+  <div class="chart">
+    
+    <canvas id="doughnutChart"></canvas> <!-- Doughnut chart canvas -->
+  </div>
+</section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script>
+  // Line Chart
+var ctx = document.getElementById('lineChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+            label: 'Earnings in $',
+            data: [2050, 1900, 2100, 2800, 1800, 2000, 2500, 2600, 2450, 1950, 2300, 2900],
+            backgroundColor: 'rgba(85, 85, 85, 0.1)',
+            borderColor: '#FC8A06',
+            borderWidth: 2,
+            pointBackgroundColor: '#FC8A06',
+            fill: true
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top',
+            }
+        }
+    }
+});
+
+// Doughnut Chart
+var ctx2 = document.getElementById('doughnutChart').getContext('2d');
+var myChart2 = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+      labels: [' Orders', ' Customers', ' Restaurants', ' Others'],
+      datasets: [{
+            label: 'Employees',
+            data: [42, 12, 8, 6],
+            backgroundColor: [
+                'rgb(247, 137, 18)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(120, 46, 139, 1)'
+            ],
+            borderColor: '#fff',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom'
+            }
+        }
+    }
+});
+</script>
+</body>
+</html>

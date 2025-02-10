@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin-Restaurants</title>
+  <link rel="stylesheet" href="admin_restaurants.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style type="text/css">
+      * {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins';
+        }
+  </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="Images/Logo.png" alt="Foodly Logo" />
+      </div>
+      <nav>
+        <p>MAIN</p>
+        <ul>
+            <a href="Admin_Dashboard.html"><li>Dashboard</li></a>
+            <a href="admin_orders.html"><li >Orders</li></a>
+            <a href="admin_restaurants.html"><li class="active">Restaurants</li></a>
+          </ul>
+      </nav>
+    </aside>
+
+  
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <div class="header-left">
+            <h1>Administration Panel</h1>
+          </div>
+        </header>
+  
+        <p>List of Restaurants</p>
+  
+        <div class="admin-panel">
+            <div class="restaurant-list">
+                <div class="restaurant-card">
+                    <img src="images/la_trattoria.jpg" alt="La Trattoria" class="restaurant-image">
+                    <h2>La Trattoria</h2>
+                    <p>Cuisine: Italian</p>
+                    <p>Location: New York</p>
+                    <a href="menu/la_trattoria.html" class="menu-link">View Menu</a>
+                    <div class="actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="images/el_sombrero.jpg" alt="El Sombrero" class="restaurant-image">
+                    <h2>El Sombrero</h2>
+                    <p>Cuisine: Mexican</p>
+                    <p>Location: Los Angeles</p>
+                    <a href="menu/el_sombrero.html" class="menu-link">View Menu</a>
+                    <div class="actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="images/sushi_palace.jpg" alt="Sushi Palace" class="restaurant-image">
+                    <h2>Sushi Palace</h2>
+                    <p>Cuisine: Japanese</p>
+                    <p>Location: San Francisco</p>
+                    <a href="menu/sushi_palace.html" class="menu-link">View Menu</a>
+                    <div class="actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="images/le_bistro.jpg" alt="Le Bistro" class="restaurant-image">
+                    <h2>Le Bistro</h2>
+                    <p>Cuisine: French</p>
+                    <p>Location: Paris</p>
+                    <a href="menu/le_bistro.html" class="menu-link">View Menu</a>
+                    <div class="actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="images/spice_garden.jpg" alt="Spice Garden" class="restaurant-image">
+                    <h2>Spice Garden</h2>
+                    <p>Cuisine: Indian</p>
+                    <p>Location: Mumbai</p>
+                    <a href="menu/spice_garden.html" class="menu-link">View Menu</a>
+                    <div class="actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <button class="add-restaurant-btn">Add New Restaurant</button>
+        </div>
+            <!-- Add more restaurant cards here -->
+        
+    
+
+    <!-- Modal for adding/editing restaurants -->
+    <div id="restaurantModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Add/Edit Restaurant</h2>
+            <form id="restaurantForm">
+                <label for="name">Restaurant Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="cuisine">Cuisine:</label>
+                <input type="text" id="cuisine" name="cuisine" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+    <script src="restaurants.js"></script>
+</body>
+</html>  
