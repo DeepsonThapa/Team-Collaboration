@@ -133,35 +133,24 @@
           </div>
           <div class="box3-2">
             <div class="top"><h3>My Basket</h3></div>
-            <div class="top-1">
-              <input type="number" required min="1">
-            <div class="top-1-1">
-              <h4>Rs.1200</h4>
-              <p>Farm House Xtreme Pizza</p>
-              </div>
-            </div>
-            <div class="top-1">
-              <input type="number">
-            <div class="top-1-1">
-              <h4>Rs.2000</h4>
-              <p>Deluxe Pizza</p>
-              </div>
+            <div id="cart-items">
+              <!-- Cart items will appear here -->
             </div>
             <div class="totalprice-1">
-             <div class="totalitems">
-              <p>Sub Total:</p>
-              <p>Discounts:</p>
-              <p>Delivery Fee:</p>
-             </div>
-            <div class="totalprice">
-              <p>Rs.3200</p>
-              <p>0.00</p>
-              <p>Rs.100</p>
-            </div>
+              <div class="totalitems">
+                <p>Sub Total:</p>
+                <p>Discounts:</p>
+                <p>Delivery Fee:</p>
+              </div>
+              <div class="totalprice">
+                <p id="sub-total">Rs.0</p>
+                <p>0.00</p>
+                <p>Rs.100</p>
+              </div>
             </div>
             <div class="bar">
               <p>Total to pay</p>
-              <h3>Rs.3300</h3>
+              <h3 id="total-price">Rs.100</h3>
             </div>
             <div class="buttom">
               <div class="buttom1"><button>Payment</button></div>
@@ -175,7 +164,6 @@
           <div class="top1">
           <h2>Similar Restaurants</h2>
           <button>></button>
-          <!--<button><p><</p></button>-->
           </div>
           <div class="more">
           <div class="image1"></div>
@@ -267,6 +255,75 @@
           </nav>
       
       </section>
+      <script>
+let cartTotal = 0;
+
+function addToCart(pizzaName, size, price) {
+    const cartItems = document.getElementById('cart-items');
+    
+    // Create new cart item
+    const newItem = document.createElement('div');
+    newItem.className = 'top-1';
+    newItem.innerHTML = `
+        <div class="top-1-1">
+            <h4>${pizzaName} (${size})</h4>
+            <p>Rs.${price}</p>
+            <!-- Deselect button -->
+            <button class="remove-from-cart" onclick="removeFromCart(this, ${price})">&times;</button>
+
+        </div>
+    `;
+    cartItems.appendChild(newItem);
+
+    // Update totals
+    cartTotal += price;
+    updateTotals();
+}
+
+function removeFromCart(button, price) {
+    const item = button.parentElement.parentElement; // Get the cart item div
+    item.remove(); // Remove the item from the DOM
+    cartTotal -= price; // Decrease the total price
+    updateTotals(); // Update the displayed totals
+}
+
+function updateTotals() {
+    const subTotalElem = document.getElementById('sub-total');
+    const totalPriceElem = document.getElementById('total-price');
+    
+    const deliveryFee = 100;
+    const total = cartTotal + deliveryFee;
+    
+    subTotalElem.textContent = `Rs.${cartTotal}`;
+    totalPriceElem.textContent = `Rs.${total}`;
+}
+
+// Update click handlers to include pizza name and price
+document.querySelectorAll('.box3-1-1 .one').forEach(btn => {
+    btn.onclick = () => addToCart('Farm House Xtreme Pizza', 'Small', 1200);
+});
+
+document.querySelectorAll('.box3-1-1 .two').forEach(btn => {
+    btn.onclick = () => addToCart('Farm House Xtreme Pizza', 'Medium', 1700);
+});
+
+document.querySelectorAll('.box3-1-1 .three').forEach(btn => {
+    btn.onclick = () => addToCart('Farm House Xtreme Pizza', 'Large', 2500);
+});
+
+// Repeat for Deluxe Pizza section
+document.querySelectorAll('.box3-1-2 .one').forEach(btn => {
+    btn.onclick = () => addToCart('Deluxe Pizza', 'Small', 1200);
+});
+
+document.querySelectorAll('.box3-1-2 .two').forEach(btn => {
+    btn.onclick = () => addToCart('Deluxe Pizza', 'Medium', 1700);
+});
+
+document.querySelectorAll('.box3-1-2 .three').forEach(btn => {
+    btn.onclick = () => addToCart('Deluxe Pizza', 'Large', 2500);
+});
+        </script>
       
 </body>
 </html>
