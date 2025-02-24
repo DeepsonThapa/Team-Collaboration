@@ -8,7 +8,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
   }
-  
+ 
   /* Navbar-Styles */
   .navbar {
     display:flex;
@@ -106,8 +106,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 500px;
-
+        gap: 400px;
     }
     .section2 input{
         border-radius: 20px;
@@ -118,11 +117,9 @@ body {
         justify-content: center;
         padding-left: 20px;
         border: 1px solid #6b6464;
-        
     }
     .section2 h2{
         width: 500px;
-        
 
     }
     /*section 3*/
@@ -230,12 +227,11 @@ body {
       align-items: center;
       border: 1px solid rgb(12, 11, 11);
     }
-      .boxs :hover{
+      .boxs :active{
         background-color: black;
         color: white;
       }
     .one-1{
-      pointer-events: none;
       background-color: green;
       color: white;
       height: 30px;
@@ -243,9 +239,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      pointer-events: none;
     }
     .two{
-
       height: 50px;
       width: 160px;
       border-radius: 5px;
@@ -257,7 +253,6 @@ body {
 
     }
     .two-1{
-      pointer-events: none;
       background-color: green;
       color: white;
       height: 30px;
@@ -265,6 +260,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      pointer-events: none;
     }
     .three{
       height: 50px;
@@ -278,7 +274,6 @@ body {
 
     }
     .three-1{
-      pointer-events: none;
       background-color: green;
       color: white;
       height: 30px;
@@ -286,6 +281,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      pointer-events: none;
     }
     .box3-1-1{
       width: 100%;
@@ -312,10 +308,10 @@ body {
     .box3-2{
       border: 1px solid #6b6464;
       width: 330px;
-      height: 700px;
+      height: 760px;
       margin-left: 30px;
       border-radius: 5px;
-
+      position: relative;
     }
 .top{
   display: flex;
@@ -331,6 +327,8 @@ body {
   gap: 20px;
   height: 80px;
   border-bottom: 1px solid rgb(12, 11, 11);
+  padding-left: 20px;
+  position: relative;
 }
 .top-1 input{
   width: 40px;
@@ -359,7 +357,9 @@ input[type="number"] {
   gap: 90px;
   height: 100px;
   padding-left: 20px;
+  padding-top: 25px;
   font-weight: bold;
+  border-top: 1px solid #6b6464;
 }
 .bar{
   display: flex;
@@ -382,6 +382,7 @@ input[type="number"] {
   border-top: 1px solid rgb(12, 11, 11);
   padding-left: 10px;
   padding-right: 10px;
+  background-color: white;
 }
 .buttom1{
   background-color: green;
@@ -496,19 +497,15 @@ padding-top: 100px;
 .social{
 flex:1;
 padding:20px;
-
 }
 
 .info{
 flex:1;
 padding:20px;
 display:flex;
-
 }
 .info-1{
 list-style-type: none;
-
-
 }
 
 .info1last a{
@@ -528,7 +525,6 @@ margin: 0;
 background-color: #03081f;
 color: white;
 height: 30px;
-
 }
 .navlinkslast {
 padding:10px ;
@@ -546,12 +542,47 @@ text-decoration: none;
 font-size: 14px;
 color: white;
 }
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button
-{
-  appearanace: none;
-  margin: 0;
-  pointer-events: none;
-  opacity: 0;
 
+/* New styles for cart items */
+#cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+  height: 200px;
+}
+
+#cart-items::-webkit-scrollbar {
+  width: 8px;
+}
+
+#cart-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+#cart-items::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#cart-items::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.remove-from-cart {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ff0000;
+    transition: color 0.3s ease;
+}
+
+.remove-from-cart:hover {
+    color: #cc0000;
 }
