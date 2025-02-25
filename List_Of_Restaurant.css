@@ -123,6 +123,7 @@ body {
       border: 1px solid #ddd;
       border-radius: 20px;
       padding-bottom: 10px;
+      padding-left: 20px;
     }
     .search-bar button {
       background-color: #FC8A06;
