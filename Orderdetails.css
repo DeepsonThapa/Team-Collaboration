@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .container {
+    height:550px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    width: 500px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    background-color: #faf9f9;
+  }
+  .name{
+    display:flex;
+    gap:20px;
+  
+  }
+  .address{
+    display:flex;
+    gap:20px;
+  }
+  .address1{
+    display:flex;
+    gap:20px;
+  }
+  .address2{
+    display:flex;
+    gap:20px;
+  }
+  .form-section h2 {
+    font-size: 24px;
+    margin-bottom: 3px;
+    color: #333; 
+  }
+  
+  .form-section p {
+    font-size: 13px;
+    margin-bottom: 25px;
+    color: #666; 
+  }
+  
+  .container input {
+    margin: 10px 0; 
+    padding: 7px;
+    width: 200px; 
+    border-radius: 10px;
+    border: 1px solid #c7c5c5;
+    background-color: #f1efef;
+    
+  }
+  .container input::placeholder{
+    font-size: 12px;
+    color:#828080
+  }
+  
+  textarea {
+    margin-top:10px;
+    border-radius: 5px;
+    border: 1px solid #c7c5c5;;
+    background-color: #f1efef;
+    height: 100px; 
+    width:420px;
+    resize: none; 
+  }
+  
+  .request-btn1 button {
+   margin-left: 30%;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    width: 190px;
+    font-size: 13px;
+    cursor: pointer; 
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+    display: grid;
+    place-items: center;
+  }
+  
+  .request-btn1 button:hover {
+    color: black;
+  }
+  
+  .request-btn2 button {
+    margin-left: 30%;
+     background-color: green;
+     border-radius: 10px;
+     padding: 10px 20px;
+     border: none;
+     color: white;
+     width: 190px;
+     font-size: 13px;
+     cursor: pointer; 
+     margin-top: 10px;
+     transition: background-color 0.3s ease; 
+     display: grid;
+     place-items: center;
+  }
+  
+  .request-btn2 button:hover {
+    color: black;
+  }
+  
