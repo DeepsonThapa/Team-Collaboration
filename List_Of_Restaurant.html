@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foodly</title>
-  <link rel="stylesheet" href="restaurant.css">
+  <link rel="stylesheet" href="List_Of_Restaurant.css">
   <link rel="icon" href="image.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,22 +17,22 @@
     <nav class="navbar">
       <!-- Logo Section -->
       <div class="logo">
-        <img src="E:\Deepson Files and Document\HTML\foodly\List of images\Logo.png" alt="Foodly Logo" title="www.Foodly.com.np">
+        <img src="Logo.png" alt="Foodly Logo" title="www.Foodly.com.np">
         
       </div>
 
       <!--Links-->
       <ul class="navlinks">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Menu">Browse Menu</a></li>
-        <li><a href="#Restaurants">Restaurants</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Menu1.html">Browse Menu</a></li>
+        <li><a href="List_Of_Restaurant.html">Restaurants</a></li>
         <li><a href="#AboutUs">About Us</a></li>
         
       </ul>
 
       <!-- Login-Signup Button -->
       <div class="login-signup">
-        <a href="#SignUp.html" class="btn">Login/Signup</a>
+        <a href="login.php" class="btn">Login/Signup</a>
       </div>
     </nav>
   </header>
@@ -44,7 +44,7 @@
 
       </div>
       <div class="image">
-        <img src= alt="Food Image">
+        <img src="eating food.jpg" alt="" height="500px" width="500px">
       </div>
   </section>
   <section class="Search">
@@ -53,11 +53,11 @@
       <button>Search</button>
     </div>
   </section>
-  <section class="restaurants">
+  <section class="restaurants" class="restaurant-card">
     <h2>List of Restaurants In Pokhara</h2>
     <div class="first">
-    <div class="res1">
-      <div class="circle1"><img src="" alt=""></div>
+    <div class="res1" class="class="restaurant-card slide-in"">
+      <div class="circle1"><img src="Roadhouse Cafe.jpg" alt=""></div>
       <div class="res-name"><h3>ROADHOUSE CAFE AND RESTRO</h3>
       <a href="#">Baidam road, Pokhara</a>
       </div>
@@ -79,7 +79,7 @@
     </div>
     <div class="first">
     <div class="res2">
-      <div class="circle2"><img src="" alt=""></div>
+      <div class="circle2"><img src="Byanjan Restaurant.jpg" alt=""></div>
       <div class="res-name"><h3>BYANJAN RESTAURANTS</h3>
         <a href="#">Barahi road, Lakeside-6, Pokhara</a>
         </div>
@@ -101,7 +101,7 @@
     </div>
     <div class="first">
     <div class="res3">
-      <div class="circle3"><img src="" alt=""></div>
+      <div class="circle3"><img src="French Creperie.jpg" alt=""></div>
       <div class="res-name"><h3>FRENCH CREPERIE</h3>
         <a href="#">Baidam road, Pokhara</a>
         </div>
@@ -123,7 +123,7 @@
     </div>
     <div class="first">
     <div class="res4">
-      <div class="circle4"><img src="" alt=""></div>
+      <div class="circle4"><img src="Hotel Barahi.jpg" alt=""></div>
       <div class="res-name"><h3>HOTEL BARAHI</h3>
         <a href="#">Lakeside Rd 6, Pokhara</a>
         </div>
@@ -145,7 +145,7 @@
   </div>
   <div class="first">
     <div class="res5">
-      <div class="circle5"><img src="" alt=""></div>
+      <div class="circle5"><img src="fresh-elements-restaurant.jpg" alt=""></div>
       <div class="res-name"><h3>FRESH ELEMENTS RESTAURANTS</h3>
         <a href="#">Lakeside street 16, Pokhara</a>
         </div>
@@ -167,7 +167,7 @@
     </div>
     <div class="first">
     <div class="res6">
-      <div class="circle6"><img src="" alt=""></div>
+      <div class="circle6"><img src="Temple Tree Resort.jpg" alt=""></div>
       <div class="res-name"><h3>TEMPLE TREE RESORT AND SPA</h3>
         <a href="#">Pargati Marga, Pokhara</a>
         </div>
@@ -189,7 +189,7 @@
     </div>
     <div class="first">
     <div class="res7">
-      <div class="circle7"><img src="" alt=""></div>
+      <div class="circle7"><img src="Pokhara Grande.jpg" alt=""></div>
       <div class="res-name"><h3>POKHARA GRANDE</h3>
         <a href="#">Pardi Bazaar, Pokhara</a>
         </div>
@@ -217,9 +217,9 @@
     <!--<button><p><</p></button>-->
     </div>
     <div class="more">
-    <div class="image1"></div>
-    <div class="image2"></div>
-    <div class="image3"></div>
+    <div class="image1"><img src="Byanjan Restaurant.jpg" alt=""></div>
+    <div class="image2"><img src="Soul Origin Cafe and Restaurant.jpg" alt=""></div>
+    <div class="image3"><img src="French Creperie.jpg" alt=""></div>
   </div>
   </section>
 <!--FOOTER-->
@@ -306,6 +306,24 @@
     </nav>
 
 </section>
+<script>
+const cards = document.querySelectorAll('.restaurants');
+
+const slideIn = () => {
+    cards.forEach(card => {
+        const cardPosition = card.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (cardPosition < screenPosition) {
+            card.classList.add('show');
+        }
+    });
+};
+
+window.addEventListener('scroll', slideIn);
+window.addEventListener('load', slideIn);
+
+</script>
 
 </body>
 </html>
