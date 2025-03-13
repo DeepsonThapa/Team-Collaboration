@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foodly</title>
-  <link rel="stylesheet" href="home.css">
-  <link rel="icon" href="image.jpeg">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico.png">
+
+  <meta name="theme-color" content="#000000" />
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <style type="text/css">
       * {
@@ -17,30 +19,48 @@
 
 </head>
 <body>
-
   <header>
     <nav class="navbar">
-      <!-- Logo Section -->
-      <div class="logo">
-        <img src="Logo.png" alt="Foodly Logo" title="www.Foodly.com.np">
-        
-      </div>
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Foodly Logo" title="www.Foodly.com.np">
+        </div>
 
-      <!--Links-->
-      <ul class="navlinks">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="Menu1.html">Browse Menu</a></li>
-        <li><a href="List_Of_Restaurant.html">Restaurants</a></li>
-        <li><a href="#AboutUs">About Us</a></li>
         
-      </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-      <!-- Login-Signup Button -->
-      <div class="login-signup">
-        <a href="login.php" class="btn">Login/Signup</a>
-      </div>
-    </nav>
-  </header>
+
+        <ul class="navlinks">
+    <li><a href="Home.php">Home</a></li>
+    <li><a href="#">Browse Menu</a></li>
+    <li><a href="List_Of_Restaurants.php">Restaurants</a></li>
+    <li><a href="#AboutUs">About Us</a></li>
+</ul>
+
+<div class="login-signup">
+    <a href="Login.php" class="btn" id="loginSignupButton">Login/Signup</a>
+    <div class="dropdown-menu" id="accountDropdown">
+        <a href="profile.php">Profile</a>
+        <a href="List_of_Food.php">Cart Details</a>
+        <a href="order_details.php">My Orders</a>
+        <a href="logout.php" id="logoutLink">Logout</a>
+    </div>
+</div>
+
+<script src = "update_login.js">
+    
+</script>
+</nav>
+</header>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".navlinks").classList.toggle("active");
+    }
+</script>
+
+
+
   <!--Section 1-->
   <section class="section1">
     <div class="content">
@@ -51,12 +71,17 @@
           <button>Search</button>
         </div>
       </div>
+
+
       <div class="image1">
-        <img src="image.jpeg" alt="Food Image">
+        <img src="Images/image.jpeg" alt="Food Image">
       </div>
+
 </div>
+
   </section>
   <p></p>
+
   <!--section2 - courses-->
   <section class="section2">
    
@@ -75,6 +100,7 @@
   
     <section class="section3">
       <div class="courses-img">
+
       <div class="coursesimg1">
         <p>Breakfast</p>
         
@@ -94,54 +120,25 @@
     <h3>Foodly Popular categories</h3>
 
     <div class="all"><!--image of different food items-->
-      <!---->
-      <div class="">
       <div class="food-img1">
+        <p>MO:MO</p>
       </div>
-        <div class="name">
-          <p>MO:MO</p>
-        </div>
-      </div>
-      <!---->
-      <div class="">
       <div class="food-img2">
-        </div>
-        <div class="name">
         <p>Salads</p>
       </div>
-    </div>
-    <!---->
-    <div>
       <div class="food-img3">
-        </div>
-        <div class="name">
         <p>Keema Noodels</p>
       </div>
-      </div>
-      <!---->
-      <div>
       <div class="food-img4">
-        </div>
-        <div class="name">
         <p>Pizza</p>
       </div>
-      </div>
-      <!---->
-      <div>
-      <div class="food-img5"></div>
-      <div class="name">
+      <div class="food-img5">
         <p>Chowmein</p>
       </div>
-      </div>
-      <!---->
-      <div>
-      <div class="food-img6"></div>
-      <div class="name">
+      <div class="food-img6">
         <p>Soup</p>
       </div>
-      </div>
-      <!---->
-    </div>
+   </div>
   </section>
 
   <!--Restaurants-->
@@ -150,33 +147,33 @@
     <h3>Popular Restaurants</h3>
     </section>
     <section class="section5-1">
-    <div class="Res-1">
-      <img src="Roadhouse Cafe.jpg" alt="restaurant" >
-      <a href="#">Roadhouse Cafe</a>
+    <div class="Res1">
+      <img src="Images/Roadhouse Cafe.jpg" alt="restaurant" >
+      <a href="Menu1.php">Roadhouse Cafe</a>
     </div>
-    <div class="Res-2">
-      <img src="Byanjan Restaurant.jpg" alt="restaurant" >
-      <a href="#">Byanjan Restaurant</a>
+    <div class="Res1">
+      <img src="Images/Byanjan Restaurant.jpg" alt="restaurant" >
+      <a href="Menu1.php">Byanjan Restaurant</a>
     </div>
-    <div class="Res-3">
-      <img src="French Creperie.jpg"  alt="restaurant" >
-      <a id="res-3" href="#">French Creperie</a>
+    <div class="Res1">
+      <img src="Images/French Creperie.jpg"  alt="restaurant" >
+      <a href="Menu1.php">French Creperie</a>
     </div>
     </section>
 
     <section class="section5-2">
 
-    <div class="Res-4">
-      <img src="fresh-elements-restaurant.jpg"  alt="restaurant" >
-      <a href="#">Fresh Elements Restaurant</a>
+    <div class="Res2">
+      <img src="Images/fresh-elements-restaurant.jpg"  alt="restaurant" >
+      <a href="Menu1.php">Fresh Elements Restaurant</a>
     </div>
-    <div class="Res-5">
-      <img src="Soul Origin Cafe and Restaurant.jpg"  alt="restaurant" >
-      <a href="#">Soul Origin Cafe and Restaurant</a>
+    <div class="Res2">
+      <img src="Images/Soul Origin Cafe and Restaurant.jpg"  alt="restaurant" >
+      <a href="Menu1.php">Soul Origin Cafe and Restaurant</a>
     </div>
-    <div class="Res-6">
-      <img src="Open House.jpg"  alt="restaurant">
-      <a id="res-6" href="#">Open House Restro</a>
+    <div class="Res2">
+      <img src="Images/Open House.jpg"  alt="restaurant">
+      <a href="Menu1.php">Open House Restro</a>
     </div>
   </section>
 
@@ -216,7 +213,7 @@
     
     <h1>Partner With us<h1>
       
-    <button><a href="Restaurant.html">GET STARTED</a></button>
+      <a href="Restaurant.php"><button type="button">GET STARTED</button></a>
   </div>
   </section>
    <br>
@@ -233,73 +230,45 @@
 
 <!--FOOTER-->
 
+
+
 <footer class="footer">
-
-<!--Logo links-->
-
-  <div class="logo9"><img src="Logo.png" alt="logo" height="20px" width="50px">
-
-    <p>Company #490039-445, Registered with House of companies.</p>
-  
+  <div class="logo9"><img src="Images/Logo.png" alt="logo" height="50px" width="100px">
+  <div><p>Company #490039-445, Registered with House of companies.</p></div>
   </div>
-  
   <div class="social">
-
     <h4>Connect With Us On</h4>
-
-    <div class="log"><!--Different social media image-->
-
-    <div id="facebook">
-      <a href="https://www.facebook.com/"><img src="fb_logo.jpeg" alt="faceboook" height="15" width="20px"></a>
-    </div>
-
-    <div id="instagram">
-      <a href="https://www.instagram.com/"><img src="ins_logo.jpeg" alt="Instagram" height="15" width="20px"></a>
-      </div>
-
-    <div id="tiktok">
-      <a href="https://www.tiktok.com/"><img src="t_logo.png" alt="Tiktok" height="15" width="20px"></a>
-    </div>
-
-    <div id="snapchat">
-      <a href="https://www.snapchat.com/"><img src="snap_logo.jpeg" alt="Snapchat" height="15" width="20px"></a>
-    </div>
-    
+    <div class="log">
+    <div><img src="Images/fb_logo.jpeg" alt="faceboook" height="17px" width="20px"></div>
+    <div><img src="Images/ins_logo.jpeg" alt="instagram"  height="17px" width="20px"></div>
+    <div><img src="Images/t_logo.png" alt="tiktok"  height="17px" width="20px"></div>
+    <div><img src="Images/snap_logo.jpeg" alt="snapchat"  height="17px" width="20px"></div>
   </div>
-
   </div>
-
-
-<!--legal links-->
   <div class="info">
-    <div class="first">
+    <div class="first1">
       <h4>Legal Pages</h4>
       <nav class="info1last">
       <ul class="info-1">
         <li><a href="#">Terms and conditions </a></li>  
         <li><a href="#">Privacy</a></li>
-        
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Modern slavery statement</a></li>
       </ul>
     </nav>
     </div>
-
-    <!--second link-->
-
-    <div class="second">
+    <div class="second2">
       <h4>Important Links</h4>
       <nav class="info1last">
       <ul class="info-1">
         <li><a href="#">Get Help</a></li>
-        <li><a href="#">Add your restaurant</a></li>
+        <li><a href="Restaurant.php">Add your restaurant</a></li>
         <li><a href="#">Create a bussiness account</a></li>
       </ul>
     </nav>
     </div>
- 
   </div>
 </footer>
-
-<!--last nav bar-->
 <section>
   <nav class="navbarlast">
       <div class="titlelast">
@@ -313,8 +282,5 @@
                   <li><a href="#">Do not sell or share my personal information</a></li>
       </ul>
     </nav>
-
 </section>
-
-
 </html>
