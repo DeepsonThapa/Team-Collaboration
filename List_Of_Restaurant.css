@@ -5,7 +5,6 @@ body {
   font-family:sans-serif;
 }
 
-/* Navbar-Styles */
 .navbar {
   display:flex;
   justify-content: space-between;
@@ -163,37 +162,8 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .ratingbody{
-    height: 80px;
-    width: 260px;
-    margin-top: 90px;
-    margin-bottom: 20px;
-    margin-right: 70px;
-    margin-left: 20px;
-  }
-  .rating {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .rating input {
-    display: none;
-  }
-
-  .rating label {
-    font-size: 4rem;
-    color: #ccc;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  .rating input:checked ~ label,
-  .rating label:hover,
-  .rating label:hover ~ label {
-    color: gold;
-  }
-  .res1{
+  
+  .res{
       width: 900px;
       height: 180px;
       background-color: #f4f1f1;
@@ -207,20 +177,19 @@ body {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       cursor: pointer;
   }
-  .res1:hover {
+  .res:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(255, 45, 0, 0.7);
+    
     height: 185px;
     width: 905px;
   }
-  .circle1{
+  .circle{
     height: 130px;
     width: 150px;
     border-radius: 50%;
-    border: 4px solid orangered;
     margin-left: 50px;
   }
-  .circle1 img{
+  .circle img{
     height: 130px;
     width: 150px;
     border-radius: 50%;
@@ -241,7 +210,6 @@ body {
 }
 .res2:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(255, 45, 0, 0.7);
   height: 185px;
   width: 905px;
 }
@@ -249,7 +217,6 @@ body {
   height: 130px;
   width: 150px;
   border-radius: 50%;
-  border: 4px solid orangered;
   margin-left: 50px;
 }
 .circle2 img{
@@ -273,7 +240,6 @@ body {
 }
 .res3:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(255, 45, 0, 0.7);
   height: 185px;
   width: 905px;
 }
@@ -281,7 +247,6 @@ body {
 height: 130px;
 width: 150px;
 border-radius: 50%;
-border: 4px solid orangered;
 margin-left: 50px;
 }
 .circle3 img{
@@ -305,7 +270,6 @@ cursor: pointer;
 }
 .res4:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(255, 45, 0, 0.7);
   height: 185px;
   width: 905px;
 }
@@ -313,7 +277,6 @@ cursor: pointer;
 height: 130px;
 width: 150px;
 border-radius: 50%;
-border: 4px solid orangered;
 margin-left: 50px;
 }
 .circle4 img{
@@ -337,7 +300,6 @@ cursor: pointer;
 }
 .res5:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(255, 45, 0, 0.7);
   height: 185px;
   width: 905px;
 }
@@ -345,7 +307,6 @@ cursor: pointer;
 height: 130px;
 width: 150px;
 border-radius: 50%;
-border: 4px solid orangered;
 margin-left: 50px;
 }
 .circle5 img{
@@ -369,7 +330,6 @@ cursor: pointer;
 }
 .res6:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(255, 45, 0, 0.7);
   height: 185px;
   width: 905px;
 }
@@ -377,7 +337,6 @@ cursor: pointer;
 height: 130px;
 width: 150px;
 border-radius: 50%;
-border: 4px solid orangered;
 margin-left: 50px;
 }
 .circle6 img{
@@ -401,7 +360,6 @@ cursor: pointer;
 }
 .res7:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(255, 45, 0, 0.7);
   height: 185px;
   width: 905px;
 }
@@ -409,7 +367,7 @@ cursor: pointer;
 height: 130px;
 width: 150px;
 border-radius: 50%;
-border: 4px solid orangered;
+
 margin-left: 50px;
 }
 .circle7 img{
