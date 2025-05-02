@@ -1,0 +1,638 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   font-family:sans-serif;
+  
+  }
+  header {
+    width: 100%;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+    position: relative;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  /* Links */
+  .navlinks {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 10px 40px 10px 300px;
+  }
+  
+  .navlinks li {
+    display: inline;
+  }
+  
+  .navlinks a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .navlinks a:hover {
+    background-color: #FC8A06;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  /* Login-Signup Button */
+  .login-signup .btn {
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .login-signup .btn:hover {
+    background-color: #FC8A06;
+    color: white;
+  }
+  
+  /* Responsive Styles */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navlinks.active {
+        display: flex;
+    }
+  
+    .navlinks li {
+        padding: 10px 0;
+    }
+  
+    .menu-toggle {
+        display: block;
+    }
+  }
+
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 50px;
+  right: 20px;
+  width: 150px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #FC8A06;
+  color: white;
+}
+
+   
+    .section1 {
+      margin-top:20px;
+      margin-left:50px;
+      margin-right:50px;
+      display: flex;
+      margin-bottom:40px;
+      justify-content: space-between;
+      padding: 40px 30px;
+      
+      border: 1px solid #e3e2e2;
+      border-radius: 20px;
+      background-color: #f9f8f8;
+    }
+    .content {
+      max-width: 50%;
+    }
+    .content h1 {
+      margin-top:40px;
+      font-size: 45px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .search-bar {
+      display: flex;
+      gap: 10px;
+    }
+    .search-bar input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #FC8A06;
+      border-radius: 20px;
+    }
+    .search-bar button {
+      margin-left:0px;
+
+      background-color: #FC8A06;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+     
+      margin-left:-95px;
+    }
+    .search-bar button:hover {
+      background-color: #cb6f05;
+      
+      
+    }
+    
+  
+    /*Image */
+    .image1 img {
+      height:350px;
+      width: 230px;
+      border-radius: 10px;
+      display:flex;
+      border: 5px solid #FC8A06;
+      box-shadow: 0px 0px 10px;
+    }
+    /*section2*/
+  
+    .section2 {
+      margin-left:60px;
+      margin-right:40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+  /*courses*/
+  
+  .courses-list {
+    padding: 10px 40px 10px 300px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  .courses-list li {
+    display: inline;
+  }
+  .courses-list span:hover{
+   color:#FC8A06;
+  }
+  .courses-list a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+    
+  }
+  .courses-list a:hover{
+      color: #FC8A06;
+  }
+
+ .section3{
+  margin-left:80px;
+  margin-right:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+ }
+
+ .section3 p{
+  font-size: 14px;
+  padding:180px 0px 10px 10px;
+  color:black;
+  font-weight: 700;
+
+ }
+ .courses-img{
+  display:flex;
+  gap:50px;
+ }
+  .coursesimg1{
+    background-image: url(Images/breakfast1.jpg);
+    background-size: cover;
+    height: 220px;
+    flex:1;
+    width: 330px;
+    border-radius: 10px;
+    
+  }
+  .coursesimg2{
+    background-image: url(Images/Lunch1.jpg);
+    background-size: cover;
+    height: 220px;
+    flex:1;
+    width: 330px;
+    border-radius: 10px;
+  }
+ 
+  .coursesimg3{
+    background-image: url(Images/Dinner2.jpg);
+    background-size: cover;
+    height: 220px;
+    flex:1;
+    width: 330px;
+    border-radius: 10px;
+  }
+  .coursesimg1:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+  }.coursesimg2:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+  }.coursesimg3:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
+  .section4 {
+    margin-left:50px;
+    margin-right:50px;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.all{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 1px;
+  margin-bottom: 40px;
+ }
+
+.food-img1{
+ 
+  height: 145px;
+  width:170px;
+  background-image: url(Images/Jess\ _\ Food\ Eater\ on\ Instagram_\ _jhol\ momo\ 🥟\ LOOK….jpeg);
+  background-size: cover;
+  border-radius: 10px;
+
+}
+.food-img1:hover{
+  transform: scale(1.1);
+}
+.food-img2{
+  height: 145px;
+  width:170px;
+  background-size: cover;
+  background-image: url(Images/pexels-iina-luoto-460132-1211887.jpg);
+  border-radius: 10px;
+
+
+}
+.food-img2:hover{
+  transform: scale(1.2);
+}
+.food-img3{
+  height: 145px;
+  width:170px;
+  background-size: cover;
+  background-image: url(Images/Keema\ Noodles.jpeg);
+  border-radius: 10px;
+}
+.food-img3:hover{
+  transform: scale(1.2);
+}
+.food-img4{
+  height: 145px;
+  width:170px;
+  background-image: url(Images/pexels-renestrgar-13814644.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.food-img4:hover{
+  transform: scale(1.2);
+}
+.food-img5{
+  height: 145px;
+  width:170px;
+  background-image:url(Images/Chowmein.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.food-img5:hover{
+  transform: scale(1.2);
+}
+.food-img6{
+  height: 145px;
+  width:170px;
+  background-image: url(Images/pexels-rukiye-demir-169878558-27349437.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.food-img6:hover{
+  transform: scale(1.2);
+}
+.all p{
+  color: white;
+  font-weight:700;
+  padding-top:110px;
+  padding-left:15px;
+  font-size:14px;
+}
+
+/*Restaurants*/
+
+.section5 h3{
+  margin-bottom:10px;
+  margin-left:50px;
+  margin-right:50px;
+
+}
+
+
+.section5-1{
+ align-items:center;
+ gap:20px;
+ margin:50px;
+ display:flex;
+}
+
+.Res1 img{
+  height:200px;
+  width:360px;
+  flex:1;
+  border-radius: 10px;
+  
+}
+
+.Res1:hover{
+  transform: scale(1.01);
+}
+
+
+.section5-2 {
+  align-items:center;
+ gap:20px;
+ margin:50px;
+ display:flex;
+}
+
+.Res2 img{
+  height:200px;
+  width:370px;
+  flex:1;
+  border-radius: 10px;
+}
+
+.Res2:hover{
+  transform: scale(1.01);
+}
+
+
+.section5-1 a{
+ 
+  font-weight: 700;
+  color:rgb(89, 88, 88);
+  margin-left: 90px;
+}
+
+
+.section5-2 a{
+  font-weight: 700;
+  color:rgb(89, 88, 88);
+  margin-left: 50px;
+}
+
+
+.section6{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+.section7{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 60px;
+}
+.section8{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 20px;
+  display: flex;
+  background-color: #FC8A06;
+  border-radius: 10px;
+  color: white;
+  height: 160px;
+}
+.first11{
+padding: 50px 50px 50px 50px;
+}
+.second22{
+padding: 50px 50px 50px 150px;
+}
+.third3{
+padding:  50px 50px 50px 180px;
+}
+.fourth4{
+padding:  50px 50px 50px 220px;
+}
+
+/*Partner with us*/
+
+.section9{
+  background-color: #666;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 50px;
+  height: 350px;
+  border-radius: 20px;
+  margin-bottom: 35px;
+  
+}
+.section9 p{
+  padding-top:180px;
+  padding-left:65px;
+  padding-bottom: 0px;
+  font-size: 13px;
+  color: white;
+  
+}
+.section9 h1{
+ 
+  padding-left:65px;
+  margin-top: 0px;
+  font-size: 28px;
+  
+}
+.section9 button{
+  text-align: center;
+  
+
+  border-radius: 40px;
+  background-color: #FC8A06;
+  border: none;
+  width: 250px;
+  height: 40px;
+
+}
+.section9 button:hover{
+  cursor: pointer;
+  background-color: #e47d07;
+}
+.section9 a{
+  text-decoration: none;
+  color:white;
+
+}
+
+.section10{
+
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  height: 150px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.section10 div{
+  text-align: center;
+background-color: white;
+width: 1000px;
+height: 50px;
+padding: 0px 3px 30px 5px;
+border-radius: 10px;
+}
+.section10 p{
+font-size: 14px;
+  padding:20px 50px 20px 20px;
+}
+
+
+.footer{
+  margin-left:0px;
+  margin-right:0px;
+  height: 300px;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+}
+
+
+.logo9 img{
+  height:60px;
+  width:120px;
+  padding: 30px 5px 5px 80px;
+  opacity:80%;
+}
+
+.logo9 p{
+padding-top: 150px;
+margin-left:20px;
+}
+
+.social{
+  flex:1;
+ margin:30px 40px;
+
+}
+
+.info{
+  
+ padding:30px;
+  display:flex;
+  gap:30px;
+}
+.info-1{
+  margin-top:10px;
+  font-size:15px;
+  list-style-type: none;
+ 
+}
+
+.info1last a{
+  text-decoration: none;
+  color: black;
+}
+
+.titlelast{
+  display: flex;
+  align-items: center;
+}
+.navbarlast {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  background-color: #03081f;
+  color: white;
+  height: 30px;
+  
+}
+.navlinkslast {
+  padding:10px ;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.navlinkslast li {
+  display: inline;
+}
+
+.navlinkslast a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
