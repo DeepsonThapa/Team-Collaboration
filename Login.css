@@ -41,11 +41,10 @@ body {
   font-size: 24px;
   margin-bottom:30px;
 }
-
-.form-section h5 {
-  font-weight: 550;
-margin-bottom: 10px;
+.form-section h5{
+  margin-bottom:15px;
 }
+
 
 .form-section input {
   background-color: #e9e8e8;
@@ -88,8 +87,7 @@ margin-bottom: 10px;
 .welcome-section {
 
   flex:2;
-  background-image: url("One\ Pot\ Meal\ Moroccan\ Chicken\ _\ Adventures\ in\ Cooking.jpeg");
-  filter: brightness(90%);
+  background-color: #FC8A06;
   background-size: cover;
   color: black;
   text-align: center;
@@ -102,14 +100,18 @@ margin-bottom: 10px;
   font-size: 30px; 
   font-weight: bold;
   margin-bottom: 15px;
-  color:white;
+  color:black;
 }
 
 .welcome-section p {
-  color:white;
+  color:black;
   font-size: 14px;
   margin-bottom: 10px;
   
+}
+.welcome-section a{
+  text-decoration:none;
+  color:#FC8A06;
 }
 
 
