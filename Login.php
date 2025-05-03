@@ -1,47 +1,48 @@
 <?php
-$servername = "localhost";
-$username = "root";       
-$password = "";           
-$database = "signup_database"; 
-
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "";
-
 session_start();
+include("Conn.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $email = $_POST['Email'];
-    $password = $_POST['password'];
+    $email = trim($_POST['Email']);
+    $password = trim($_POST['Password']);
 
     if (!empty($email) && !empty($password)) {
-        // Check if the email exists in the database
-        $sql = "SELECT * FROM signup_table WHERE Email = '$email'";
-        $result = mysqli_query($conn, $sql);
+        $stmt = $conn->prepare("SELECT id, Password FROM form WHERE Email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
-        if ($result && mysqli_num_rows($result) > 0) {
-            $user = mysqli_fetch_assoc($result);
+        if ($result && $result->num_rows > 0) {
+            $user = $result->fetch_assoc();
+      
 
-            // Directly compare the plain-text password
-            if ($password === $user['password']) {
-                // Store user data in the session
-                $_SESSION['user_id'] = $user['id']; // Save user ID or other info as needed
-                echo "<script>alert('Login successful!');</script>";
-                echo "<script>window.location.href = 'after_login.html';</script>";
-            } else {
-                echo 'Incorrect password!';
-            }
-        } else {
-            echo 'No account found with this email!';
-        }
-    } else {
-        echo 'Please fill in all fields!';
-    }
+            if (password_verify($password, $user['Password'])) {
+              $_SESSION['user_id'] = $user['id'];
+              $redirectUrl = 'Home.php';
+              if (isset($_SERVER['HTTP_REFERER'])) {
+                  $referrer = $_SERVER['HTTP_REFERER'];
+                  if (strpos($referrer, 'Home.php') !== false) { 
+                      $redirectUrl = 'Home.php';
+                  }
+              } else {
+                  error_log("HTTP_REFERER not set!");
+              }
+
+              echo "<script>
+                      alert('Login successful!');
+                      window.location.href = '$redirectUrl';
+                    </script>";
+              exit;
+          } else {
+              echo "<script>alert('Incorrect password!');</script>";
+          }
+      } else {
+          echo "<script>alert('No account found with this email!');</script>";
+      }
+      $stmt->close();
+  } else {
+      echo "<script>alert('Please fill in all fields!');</script>";
+  }
 }
 ?>
 
@@ -52,28 +53,28 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login | Foodly</title>
   <link rel="stylesheet" href="Login.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-  <!-- Left Section-->
   <div class="container">
     <div class="form-section">
-      <h1>Login</h1>
-      <form method="POST" action="">
-        <h5>E-mail Address</h5>
+      <h1>Login | Foodly</h1>
+      <form method="POST">
+        <h5>Email Address</h5>
         <input type="email" name="Email" placeholder="Enter your E-mail Address" required><br>
         <h5>Password</h5>
-        <input type="password" name="password" placeholder="Enter your password" required><br>
+        <input type="password" name="Password" placeholder="Enter your password" required><br>
+      
+
         <button class="SignUp" type="submit">Login</button>
       </form>
     </div>
 
-    <!-- Right Section-->
     <div class="welcome-section">
       <h1>WELCOME!</h1>
-      <p>Enter your credentials <br> to login.</p>
-      <br><br>
+      <p>Enter your credentials <br>to login.</p>
       <p>Don't have an account?</p>
-      <button class="signup-btn"> <a href="signup.php">Sign Up</a></button>
+      <button class="signup-btn"><a href="SignUp.php">Sign Up</a></button>
     </div>
   </div>
 </body>
