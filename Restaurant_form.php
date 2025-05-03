@@ -23,12 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $upload_dir = "uploads/";
     $img_path = handleFileUpload($_FILES['img_path'], $upload_dir, array('jpg', 'jpeg', 'png', 'gif'));
 
-    // Check if passwords match
+    // check password
     if ($_POST['password'] !== $_POST['confirm_password']) {
         die("<script>alert('Passwords do not match!'); window.history.back();</script>");
     }
 
-    // Hash the password before storing it
+    // hash password
     $password = $_POST['password'];
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
@@ -65,17 +65,17 @@ function handleFileUpload($file, $upload_dir, $allowed_extensions) {
         return false;
     }
 
-    if ($file_size > 5000000) { //5MB limiit
+    if ($file_size > 5000000) { 
         echo "Error: File size exceeds the limit.<br>";
         return false;
     }
 
-//to create upload folder if doenot already exists
+
     if (!is_dir($upload_dir)) {
         mkdir($upload_dir, 0755, true); 
     }
 
-    $new_file_name = uniqid() . "." . $file_ext;//file name
+    $new_file_name = uniqid() . "." . $file_ext;
     $file_destination = $upload_dir . $new_file_name;
 
     if (move_uploaded_file($file_tmp, $file_destination)) {
