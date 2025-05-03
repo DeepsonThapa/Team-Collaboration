@@ -1,9 +1,4 @@
 
-* {
-  margin: 0;
-  padding: 0;
- 
-}
 
 body {
   font-family: sans-serif;
@@ -16,10 +11,11 @@ body {
 }
 
 .container {
+  
   display: flex;
   width: 650px;
   height: 520px;
-  box-shadow: 20px 25px 20px rgb(210, 210, 210);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
   border:5px rgb(135, 135, 135);
   border-radius: 0px;
   overflow: hidden;
@@ -44,10 +40,13 @@ body {
   display:flex;
 }
 .terms-list li {
+  font-size:10px;
   text-decoration: none;
   display: inline;
 }
+
 .terms-list a{
+  font-size:10px;
   color:#FC8A06;
 }
 
@@ -74,15 +73,16 @@ body {
 .name-container{
 display:flex;
 }
+
 #name-container1{
-  margin-right:15px;
+  margin-right:10px;
   font: size 13px;;
-  width:35%;
+  width:33%;
 
 }
 
 #name-container2 {
- width:35%;
+ width:33%;
  margin-left:1px;
 }
 
@@ -137,7 +137,7 @@ display:flex;
 }
 
 .welcome-section p {
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 15px;
   
 }
@@ -153,10 +153,6 @@ display:flex;
   border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
-}
-.welcome-section .login-btn li{
-  text-decoration: none;
-  color:#FC8A06;
 }
 
 .welcome-section .login-btn:hover {
