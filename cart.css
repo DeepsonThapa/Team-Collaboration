@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+     font-family:sans-serif;
+    
+    }
+  /* General Styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+    position: relative;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width:155px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  /* Links */
+  .navlinks {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 10px 40px 10px 300px;
+  }
+  
+  .navlinks li {
+    display: inline;
+  }
+  
+  .navlinks a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .navlinks a:hover {
+    background-color: #FC8A06;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  /* Login-Signup Button */
+  .login-signup .btn {
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .login-signup .btn:hover {
+    background-color: #FC8A06;
+    color: white;
+  }
+  
+  
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navlinks.active {
+        display: flex;
+    }
+  
+    .navlinks li {
+        padding: 10px 0;
+    }
+  
+    .menu-toggle {
+        display: block;
+    }
+  }
+
+  h2 {
+    color: #FC8A06;
+  margin-left:50px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #FC8A06;
+    color: white;
+}
+
+tr:hover {
+    background: #f8f8f8;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+.remove-btn:hover {
+    color: darkred;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buy-btn {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
+.back-link {
+    color: #e44d26;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    width: 100px;
+    opacity: 80%;
+  }
+  
+  .logo-container p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .social {
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons img {
+    height: 20px;
+    width: 20px;
+  }
+  
+
+  .footer-links {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .links h4 {
+    margin-bottom: 10px;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-bottom: 5px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: black;
+  }
+
+ 
+.footer-bottom {
+    background-color: #03081f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Restaurant Images Section */
+  .section-res {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .more {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .image-box {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    background-image: url(Images/fresh-elements-restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+ 
+  .top-button {
+    background-color: #FC8A06;
+    color: black;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: xx-large;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .footer-bottom ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .more {
+        flex-direction: column;
+    }
+  
+    .image-box {
+        width: 100%;
+    }
+  }

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodly - Nepali Menu</title>
+  <link rel="stylesheet" href="Home.css">
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico.png">
+  <meta name="theme-color" content="#000000" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins';
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .menu-section {
+      padding: 50px;
+      text-align: center;
+      color: white;
+    }
+
+    .menu-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+        color:#fc8a06;
+    }
+
+    .category {
+      margin: 40px auto;
+      max-width: 1000px;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .category h3 {
+      font-size: 28px;
+      color: #fc8a06;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .item {
+      background-color: #fff2e0;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .item h4 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .item p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/Logo.png" alt="Foodly Logo" title="www.Foodly.com.np">
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="navlinks">
+        <li><a href="Home.php">Home</a></li>
+        <li><a href="Home.php#menu-details">Browse Menu</a></li>
+        <li><a href="List_Of_Restaurants.php">Restaurants</a></li>
+        <li><a href="Home.php#about-us">About Us</a></li>
+      </ul>
+      <div class="login-signup">
+        <a href="Login.php" class="btn" id="loginSignupButton">Login/Signup</a>
+        <div class="dropdown-menu" id="accountDropdown">
+          <a href="profile.php">Profile</a>
+          <a href="List_of_Food.php">Cart Details</a>
+          <a href="order_details.php">My Orders</a>
+          <a href="logout.php" id="logoutLink">Logout</a>
+        </div>
+      </div>
+      <script src="update_login.js"></script>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".navlinks").classList.toggle("active");
+    }
+  </script>
+
+  <section class="menu-section">
+    <h2>Explore Nepali Cuisine</h2>
+<section  id="Breakfast">
+    <div class="category">
+        <h3>Breakfast</h3>
+        <div class="menu-items">
+          <div class="item">
+            <img src="Images/breakfast1.jpg" alt="Sel Roti with Achar">
+            <h4>Sel Roti with Achar</h4>
+            <p>Crispy homemade Nepali rice doughnut served with spicy pickle</p>
+          </div>
+          <div class="item">
+            <img src="Images/samosa.jpg" alt="Samosa">
+            <h4>Samosa</h4>
+            <p>Golden fried pastry stuffed with seasoned potatoes and peas</p>
+          </div>
+          <div class="item">
+            <img src="Images/Breakfast 3.jpg" alt="Bread Omelette">
+            <h4>Bread Omelette</h4>
+            <p>Toasted bread layered with a fluffy egg omelette</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="category" id="Lunch">
+        <h3>Lunch</h3>
+        <div class="menu-items">
+          <div class="item">
+            <img src="Images/fried_rice.jpg" alt="Fried Rice">
+            <h4>Fried Rice</h4>
+            <p>Stir-fried rice with vegetables and mild spices</p>
+          </div>
+          <div class="item">
+            <img src="Images/thakali.jpg" alt="Thakali Khana Set">
+            <h4>Thakali Khana Set</h4>
+            <p>Authentic Thakali meal with rice, dal, saag, meat curry and sides</p>
+          </div>
+        </div>
+      </div>
+      <section  id="Dinner">
+      <div class="category">
+        <h3>Dinner</h3>
+        <div class="menu-items">
+          <div class="item">
+            <img src="Images/paratha.jpg" alt="Paratha Set">
+            <h4>Paratha Set</h4>
+            <p>Flaky flatbread served with curry and yogurt</p>
+          </div>
+          <div class="item">
+            <img src="Images/roti.jpg" alt="Roti Set">
+            <h4>Roti Set</h4>
+            <p>Soft wheat flatbreads served with tarkari and achar</p>
+          </div>
+        </div>
+      </div>
+      </section>
+      
+      <div class="category">
+        <h3>Cold Drinks</h3>
+        <div class="menu-items">
+          <div class="item">
+            <img src="Images/coke.jpg" alt="Coke">
+            <h4>Coke</h4>
+            <p>Chilled Coca-Cola (250ml bottle)</p>
+          </div>
+          <div class="item">
+            <img src="Images/fanta.jpg" alt="Fanta">
+            <h4>Fanta</h4>
+            <p>Refreshing orange-flavored soft drink</p>
+          </div>
+          <div class="item">
+            <img src="Images/sprite.jpg" alt="Sprite">
+            <h4>Sprite</h4>
+            <p>Lemon-lime soft drink served cold</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="logo9">
+      <img src="Images/Logo.png" alt="logo">
+      <div><p>Company #490039-445, Registered with House of companies.</p></div>
+    </div>
+    <div class="social">
+      <h4>Connect With Us On</h4>
+      <div class="log">
+        <div><img src="Images/fb_logo.jpeg" alt="facebook"></div>
+        <div><img src="Images/ins_logo.jpeg" alt="instagram"></div>
+        <div><img src="Images/t_logo.png" alt="tiktok"></div>
+        <div><img src="Images/snap_logo.jpeg" alt="snapchat"></div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="first1">
+        <h4>Legal Pages</h4>
+        <nav class="info1last">
+          <ul class="info-1">
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Modern slavery statement</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="second2">
+        <h4>Important Links</h4>
+        <nav class="info1last">
+          <ul class="info-1">
+            <li><a href="#">Get Help</a></li>
+            <li><a href="Restaurant.php">Add your restaurant</a></li>
+            <li><a href="#">Create a business account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <section>
+    <nav class="navbarlast">
+      <div class="titlelast">
+        <p>Foodly Copyright 2025, All Rights Reserved.</p>
+      </div>
+      <ul class="navlinkslast">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Do not sell or share my personal information</a></li>
+      </ul>
+    </nav>
+  </section>
+</body>
+</html>
