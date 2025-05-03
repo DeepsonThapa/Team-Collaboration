@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    height:530px;
+    height:500px;
     margin-top: 20px; 
     display: flex;
     flex-direction: column; 
@@ -62,15 +62,6 @@ body {
     color:#828080
 }
 
-textarea {
-    margin-top:10px;
-    border-radius: 5px;
-    border: 1px solid #c7c5c5;;
-    background-color: #f1efef;
-    height: 100px; 
-    width:420px;
-    resize: none; 
-}
 
 .request-btn button {
    margin-left: 150px;
